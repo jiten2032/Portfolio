@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+/* HOME   */
+
+.video{
+    opacity: 0.8;
+    
+}
+.Homebtn{
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 22px;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+.Homebtn:hover{
+    background-color: rgb(29, 172, 167);
+    border: none;
+    color: white;
+    
+}
+.active{
+    color: saddlebrown !important ;  
+}
+.nav-link{
+    font-size: 19px ;
+    padding: 0px 20px !important ;
+}
+.nav-link:hover{
+    color: saddlebrown !important ;
+   
+}
+#navbarcontent{
+    position: relative;
+    bottom: 7px;
+}
+
+/* ABOUT */
+
+#about h1{
+ 
+    border-bottom: 4px solid currentColor;
+   line-height:72px;
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   left: 40%;
+   font-weight: 600;
+}
+#about h4{
+   font-weight: 600;
+}
+#mypic{
+  max-height: 300px;
+  max-width: 300px;
+border-radius: 550px;
+    position: relative;
+}
+.progress{
+    margin-top: 40px;
+    height: 30px;
+    
+
+    
+}
+.progress_value{
+font-size: 20px ;
+padding-left: 30px;
+background-color: white;
+color:black;
+opacity: 0.4;
+font-weight: 600;
+transition: 0.5s all;
+}
+.progress_value:hover{
+background-color: rgb(63, 177, 230);
+color: white;
+}
+.progress_percentage{
+    font-size: 20px ;
+    margin-right: 80px;
+}
+
