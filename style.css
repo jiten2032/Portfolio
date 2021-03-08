@@ -40,8 +40,8 @@
    
 }
 #navbarcontent{
-    position: relative;
-    bottom: 7px;
+    margin-top: -7px;
+    
 }
 
 /* ABOUT */
@@ -65,8 +65,13 @@
 border-radius: 550px;
     position: relative;
 }
+#mypic:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+}
 .progress{
-    margin-top: 40px;
+    margin-top: 20px;
     height: 30px;
     
 
@@ -77,7 +82,7 @@ font-size: 20px ;
 padding-left: 30px;
 background-color: white;
 color:black;
-opacity: 0.4;
+opacity: 0.5;
 font-weight: 600;
 transition: 0.5s all;
 }
@@ -90,3 +95,224 @@ color: white;
     margin-right: 80px;
 }
 
+
+/* Portfolio */
+#portfolio{
+    background-color: rgb(245,245,245);
+}
+#portfolio h1{
+ 
+    border-bottom: 4px solid currentColor;
+   line-height:72px;
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   left: 40%;
+   font-weight: 600;
+}
+/* .project_contents input{
+display: block;
+margin: 0px 10px;
+
+} */
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+ 
+  
+  /* .portfolio_row img{
+   max-width: 200px;
+   max-height: 300px;
+  } */
+  
+  /* Add padding BETWEEN each column */
+  /* .portfolio_row,
+  .portfolio_row > .column {
+    padding: 8px;
+  } */
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    /* float: left;
+    width: 25%; */
+    display: none;          
+}
+    /* Hide all elements by default */
+ 
+  
+  /* Clear floats after rows */ 
+  .portfolio_row:after {
+    content: "";
+    display: table;
+    /* clear: both; */
+  }
+  
+  /* Content */
+  /* .content { */
+    /* background-color: white; */
+    /* padding: 10px; */
+  /* } */
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .portfolio_btn {
+    border: none;
+    outline: none;
+    /* padding: 12px 10px; */
+    /* font-size: 20px; */
+    color: rgb(87, 86, 86);
+    background-color: rgb(196, 211, 226);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s;
+  
+  
+  }
+  
+  .portfolio_btn:hover {
+    background-color:rgb(227,28,110);
+  }
+  
+  .portfolio_btn.btn_active {
+    background-color:rgb(227,28,110);
+    color: white;
+  }
+
+  .content {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  /* .content image {
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+  
+  .content_overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .content:hover .content_overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .content_text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .portfolio_content {
+    max-width: 1000px;
+    margin: auto;
+  } */
+
+
+/* .myrow {
+    margin: 8px -16px;
+  } */
+  
+  /* Add padding BETWEEN each column (if you want) */
+  /* .myrow,
+  .myrow > .column {
+    padding: 8px;
+  } */
+  
+  /* Create three equal columns that floats next to each other */
+  /* .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  /* } */ 
+  
+  /* Clear floats after rows */
+  /* .myrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Content */
+  /* .content {
+    background-color: white;
+    padding: 10px;
+  }
+   */
+  /* The "show" class is added to the filtered elements */
+  /* .show {
+    display: block;
+  } */
+  
+  /* Style the buttons */
+  /* .mybtn {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-size: 17px;
+  } */
+  
+  /* Add a grey background color on mouse-over */
+  /* .mybtn:hover {
+    background-color: #ddd;
+     background-color:rgb(227,28,110);
+  } */
+  
+  /* Add a dark background color to the active button */
+  /* .mybtn.activebtn {
+    background-color: rgb(227,28,110);
+     color:white;
+  } */
