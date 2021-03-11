@@ -1,9 +1,17 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto';
-    scroll-behavior: smooth;
+    
 }
 
 /* HOME   */
@@ -110,92 +118,37 @@ color: white;
    left: 40%;
    font-weight: 600;
 }
-/* .project_contents input{
-display: block;
-margin: 0px 10px;
 
-} */
-
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
- 
-  
-  /* .portfolio_row img{
-   max-width: 200px;
-   max-height: 300px;
-  } */
-  
-  /* Add padding BETWEEN each column */
-  /* .portfolio_row,
-  .portfolio_row > .column {
-    padding: 8px;
-  } */
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    /* float: left;
-    width: 25%; */
-    display: none;          
-}
-    /* Hide all elements by default */
- 
-  
-  /* Clear floats after rows */ 
-  .portfolio_row:after {
-    content: "";
-    display: table;
-    /* clear: both; */
-  }
-  
-  /* Content */
-  /* .content { */
-    /* background-color: white; */
-    /* padding: 10px; */
-  /* } */
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
   
   /* Style the buttons */
-  .portfolio_btn {
+  #portfolio_btn button{
     border: none;
     outline: none;
     /* padding: 12px 10px; */
     /* font-size: 20px; */
-    color: rgb(87, 86, 86);
-    background-color: rgb(196, 211, 226);
+    color: rgb(114, 109, 111) !important ;
+    /* background-color: rgb(196, 211, 226); */
     cursor: pointer;
     border-radius: 10px;
-    transition: all 0.5s;
-  
+    transition: 0.5s ease;
+  font-size: 25px;
   
   }
   
-  .portfolio_btn:hover {
-    background-color:rgb(227,28,110);
+    #portfolio_btn button:hover {
+    color:rgb(227,28,110) !important;
   }
   
-  .portfolio_btn.btn_active {
+  /* #portfolio_btn button .active {
     background-color:rgb(227,28,110);
     color: white;
-  }
+  }  */
 
   .content {
     position: relative;
-    /* width: 50%; */
+  
   }
   
-  /* .content image {
-    display: block;
-    width: 100%;
-    height: auto;
-  } */
   
   .content_overlay {
     position: absolute;
@@ -226,93 +179,3 @@ margin: 0px 10px;
     text-align: center;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .portfolio_content {
-    max-width: 1000px;
-    margin: auto;
-  } */
-
-
-/* .myrow {
-    margin: 8px -16px;
-  } */
-  
-  /* Add padding BETWEEN each column (if you want) */
-  /* .myrow,
-  .myrow > .column {
-    padding: 8px;
-  } */
-  
-  /* Create three equal columns that floats next to each other */
-  /* .column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide columns by default */
-  /* } */ 
-  
-  /* Clear floats after rows */
-  /* .myrow:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
-  
-  /* Content */
-  /* .content {
-    background-color: white;
-    padding: 10px;
-  }
-   */
-  /* The "show" class is added to the filtered elements */
-  /* .show {
-    display: block;
-  } */
-  
-  /* Style the buttons */
-  /* .mybtn {
-    border: none;
-    outline: none;
-    padding: 12px 20px;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.5s;
-    font-size: 17px;
-  } */
-  
-  /* Add a grey background color on mouse-over */
-  /* .mybtn:hover {
-    background-color: #ddd;
-     background-color:rgb(227,28,110);
-  } */
-  
-  /* Add a dark background color to the active button */
-  /* .mybtn.activebtn {
-    background-color: rgb(227,28,110);
-     color:white;
-  } */
