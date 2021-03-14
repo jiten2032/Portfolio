@@ -2,7 +2,9 @@
 html{
   scroll-behavior: smooth;
 }
-
+body{
+  position: relative;
+}
 
 
 
@@ -16,10 +18,17 @@ html{
 
 /* HOME   */
 
-.video{
+/* .video{
     opacity: 0.8;
     
-}
+} */
+
+
+
+
+
+
+
 .Homebtn{
     background: none;
     color: white;
@@ -30,6 +39,27 @@ html{
     transition: 0.5s all;
     text-decoration: none;
 }
+
+/* for smaller screen */
+
+.sm_homebtn{
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 5px;
+  /* font-weight: 500; */
+  font-size: 15px;
+  transition: 0.5s all;
+  text-decoration: none;
+}
+.sm_homebtn:hover{
+  background-color: rgb(29, 172, 167);
+  border: none;
+  color: white;
+}
+
+
+
 .Homebtn:hover{
     background-color: rgb(29, 172, 167);
     border: none;
@@ -67,6 +97,10 @@ html{
 #about h4{
    font-weight: 600;
 }
+
+/* .content-1 p{
+  max-width: 200px;
+} */
 #mypic{
   max-height: 300px;
   max-width: 300px;
@@ -78,6 +112,58 @@ border-radius: 550px;
     -webkit-transform: scaleX(-1);
      transform: scaleX(-1);
 }
+
+
+.skills_logo h2{
+  transition: all 0.5s;
+  cursor: pointer;
+  color: #f4511e;
+  margin: 5px;
+}
+
+.skills_logo h2 span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.skills_logo h2 span::after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+}
+.skills_logo h2:hover span{
+  padding-right: 25px;
+}
+.skills_logo h2:hover span::after{
+  opacity: 1;
+  right: 0;
+}
+
+.skills_logo img:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
 .progress{
     margin-top: 20px;
     height: 30px;
@@ -108,6 +194,11 @@ color: white;
 #portfolio{
     background-color: rgb(245,245,245);
 }
+/* .portfolio_wrapper{
+  margin: 50px auto; 
+} */
+
+
 #portfolio h1{
  
     border-bottom: 4px solid currentColor;
@@ -126,7 +217,7 @@ color: white;
     outline: none;
     /* padding: 12px 10px; */
     /* font-size: 20px; */
-    color: rgb(114, 109, 111) !important ;
+    color: rgb(20, 65, 161) !important ;
     /* background-color: rgb(196, 211, 226); */
     cursor: pointer;
     border-radius: 10px;
@@ -135,9 +226,14 @@ color: white;
   
   }
   
-    #portfolio_btn button:hover {
-    color:rgb(227,28,110) !important;
-  }
+    /* #portfolio_btn button:hover { */
+    /* color:rgb(227,28,110) !important; */
+  /* } */
+
+  /* #pills-home-tab{ */
+    /* background-color: tomato !important;
+    color: white !important; */
+  /* } */
   
   /* #portfolio_btn button .active {
     background-color:rgb(227,28,110);
@@ -179,3 +275,55 @@ color: white;
     text-align: center;
   }
 
+  #contact h1{
+ 
+    border-bottom: 4px solid currentColor;
+   line-height:72px;
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   left: 40%;
+   font-weight: 600;
+}
+
+/* contact */
+
+.contact_content{
+  background-color: rgb(37,41,52);
+}
+.contact_details{
+  background:rgb(27,36,47);
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 150px;
+ 
+  
+}
+.contact_details li{
+  color: white;
+  list-style-type: none;
+
+}
+.contact_details li img{
+  border-radius: 10px;
+}
+.footer{
+  background:rgb(27,36,47);
+  height: 260px;
+  
+ 
+}
+
+.footer li{
+  background:rgb(38,47,56);
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+ margin-top: 80px;
+}
+
+#copyright{
+  color: rgba(173, 169, 169, 0.479);
+}

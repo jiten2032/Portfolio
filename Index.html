@@ -16,36 +16,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <!-- <script src="https://stackpath> </script> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarcontent" data-offset="30" tabindex="0">
     <!-- HOME -->
-    <div class="home">
-        <div>
+    <div id="home">
+        <div class="position-relative">
             <div class="video">
                 <video loop autoplay class="w-100 h-100">
-                    <source src="Images/White Waves Break on the Beach.mp4" type="video/mp4">
+                    <source src="Images/homepage.mp4" type="video/mp4">
                 </video>
+                <!-- <img src="Images/logo1.gif" id="img_home" alt="" srcset=""  class="card-img img-fluid"> -->
+
+
+
             </div>
             <div
-                class="overlay position-absolute top-50 start-50 translate-middle text-white d-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                class="overlay position-absolute top-50 start-50 translate-middle text-white d-none d-md-block d-lg-block d-xl-block d-xxl-block">
                 <h1>Hello,I'm <span class="text-danger">Jiten Mohanty</span>.</h1>
                 <h1 class="mb-5">I'm a Front-end web devloper .</h1>
                 <div id="scrollspy" class="mx-5">
                     <a class="Homebtn" href="#portfolio">View my work
-                        <img src="https://img.icons8.com/ios-filled/24/ffffff/right--v2.png">
+                        <img src="https:/img.icons8.com/ios-filled/24/ffffff/right--v2.png">
                     </a>
                 </div>
             </div>
-            <div class="overlay position-absolute text-white 
-             d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none" style="top:40px;left:70px;">
-                <h1>Hello,I'm <span class="text-danger">Jiten Mohanty</span>.</h1>
-                <h1 class="mb-4">I'm a Front-end web devloper .</h1>
+            <div class="overlay text-white 
+             d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none position-absolute top-50 start-50 translate-middle">
+                <h5>Hello,I'm <span class="text-danger">Jiten Mohanty</span>.</h5>
+                <h5 class="mb-4">I'm a Front-end web devloper</h5>
                 <div id="scrollspy" class="mx-4">
-                    <a class="Homebtn" href="#portfolio">View my work
+                    <a class="sm_homebtn" href="#portfolio">View my work
                         <img src="https://img.icons8.com/ios-filled/24/ffffff/right--v2.png">
                     </a>
                 </div>
@@ -63,7 +68,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbaritem">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">ABOUT</a>
@@ -71,9 +76,6 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">BLOG</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">CONTACT</a>
@@ -84,65 +86,53 @@
         </div>
     </nav>
 
-
-    <div data-bs-spy="scroll" data-bs-target="#navbarcontent" data-bs-offset="0" tabindex="0">
-        <!-- ABOUT -->
-
-        <div id="about">
-            <div class="content-1">
-                <h1 class=" my-5">ABOUT</h1>
-                <div class="container d-flex justify-content-around">
+    <div id="about" class="my-5">
+        <!-- <div class="content-1"> -->
+            <h1 class="my-5">ABOUT</h1>
+            <!-- <div class="container d-flex justify-content-around flex-wrap">
                     <div class="text-center">
-                        <img src="/Images/fast.svg" height="60px" width="60px" alt="" srcset="">
+                        <img src="Images/fast.svg" height="60px" width="60px" alt="" srcset="">
                         <h4 class="my-3 "> Fast</h4>
                         <p class="fs-5">Fast load times and lag free interaction,
                             my highest priority.</p>
                     </div>
                     <div class="text-center">
-                        <img src="/Images/responsive.svg" height="60px" width="60px" alt="" srcset="">
+                        <img src="Images/responsive.svg" height="60px" width="60px" alt="" srcset="">
                         <h4 class="my-3">Responsive</h4>
                         <p class="fs-5">My layouts will work on any device, big or small.</p>
                     </div>
                     <div class="text-center">
-                        <img src="/Images/third-eye.svg" height="60px" width="60px" alt="" srcset="">
+                        <img src="Images/third-eye.svg" height="60px" width="60px" alt="" srcset="">
                         <h4 class="my-3">Intuitive</h4>
                         <p class="fs-5">Strong preference for easy to use, intuitive UX/UI.</p>
                     </div>
                     <div class="text-center">
-                        <img src="/Images/atom.svg" height="60px" width="60px" alt="" srcset="">
+                        <img src="Images/atom.svg" height="60px" width="60px" alt="" srcset="">
                         <h4 class="my-3">Dynamic</h4>
                         <p class="fs-5">Websites don't have to be static, I love making pages come to life.</p>
                     </div>
 
-                </div>
-            </div>
-            <div class="content-2 container my-5">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <div class="bg-image hover-zoom">
-                            <img src="/Images/Myphoto.jpg" class="img-fluid" id="mypic">
-                        </div>
-
-                        <!-- <div class="bg-image hover-overlay hover-zoom hover-shadow ripple">
-                         <img src="/Images/Myphoto.jpg" class="img-fluid" alt="" id="mypic">
-                            <a href="#!">
-                              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
-                            </a>
-                          </div> -->
-
-                        <!-- <img src="/Images/Myphoto.jpg" class="img-fluid" alt="" id="mypic"> -->
-                        <h3 class="my-4 fw-bolder">Who's this guy?</h3>
-                        <p class="fs-5">I'm a Front-End Developer for <span><a href="https://www.jio.com/"
-                                    target="_blank" class="text-decoration-none text-info">Reliance Jio </a></span> in
-                            Bhubaneswar, Odisha.
-                            I have serious passion for UI effects, animations and creating intuitive, dynamic user
-                            experiences.
-                            <span class="text-info"><a href="#contact" class="text-decoration-none text-info">Let's make
-                                    something special. </a> </span>
-                        </p>
+                </div> -->
+        <!-- </div> -->
+        <div class="content-2 container my-5">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="bg-image hover-zoom">
+                        <img src="Images/Myphoto.jpg" class="img-fluid" id="mypic">
                     </div>
-                    <div class="col-md-6">
-                        <div class="progress">
+                    <h3 class="my-4 fw-bolder">Who's this guy?</h3>
+                    <p class="fs-5">I'm a Front-End Developer for <span><a href="https://www.jio.com/" target="_blank"
+                                class="text-decoration-none text-info">Reliance Jio </a></span> in
+                        Bhubaneswar, Odisha.
+                        I have serious passion for UI effects, animations and creating intuitive, dynamic user
+                        experiences.
+                        <span class="text-info"><a href="#contact" class="text-decoration-none text-info">Let's make
+                                something special. </a> </span>
+                    </p>
+                </div>
+                <div class="col-md-6 skills_logo">
+                    <h2 class="text-center mb-5"><span>Skills</span></h2>
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%"
                                 aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
 
@@ -155,8 +145,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress">
+                        </div> -->
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
                                 style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 
@@ -170,8 +160,8 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="progress">
+                        </div> -->
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%"
                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 <div class="d-flex justify-content-between">
@@ -183,8 +173,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress">
+                        </div> -->
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%"
                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 <div class="d-flex justify-content-between">
@@ -196,8 +186,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress">
+                        </div> -->
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
                                 style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 <div class="d-flex justify-content-between">
@@ -209,8 +199,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress">
+                        </div> -->
+                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
                                 style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                 <div class="d-flex justify-content-between">
@@ -222,23 +212,63 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+                 
+                    <div class="d-flex justify-content-evenly flex-wrap">
+                        <div class="text-center">
+                            <img src="Images/html.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">HTML</h5>
                         </div>
+                        <div class="text-center">
+                            <img src="Images/css.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">CSS</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/sass.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">SASS</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/bootstrap.svg" alt="" srcset="" class="img-fluid" height="100px"
+                                width="100px">
+                            <h5 class="font-monospace">BOOTSTRAP</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-evenly my-3 flex-wrap">
+                        <div class="text-center">
+                            <img src="Images/js-file.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">JAVASCRIPT</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/atom.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">REACT</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/redux.svg" alt="" srcset="" class="img-fluid" height="100px" width="100px">
+                            <h5 class="font-monospace">REDUX</h5>
+                        </div>
+            
                     </div>
                 </div>
-
             </div>
+
         </div>
+        <div class="my-5 invisible">jfhjkdhjfh</div>
+    </div>
 
 
-        <!-- PORTFOLIO -->
-        <div id="portfolio">
-            <!-- Item 1 -->
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <!-- Item 1 -->
+        <div class="portfolio_wrapper">
+
             <h1 class="my-5">PROJECTS</h1>
 
             <div class="container d-flex justify-content-center my-5" id="portfolio_btn">
                 <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                             aria-selected="true">Show all</button>
                     </li>
@@ -271,506 +301,10 @@
             </div>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="portfolio_row ">
+                    <div class="portfolio_row">
                         <div class="container">
                             <div class="row text-center g-1 m-0">
                                 <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/movie finder.jfif" class="img-fluid card-img"
-                                            alt="movieflex App">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white" data-bs-toggle="modal" data-bs-target="#moviefinder">Learn
-                                                    More</button>
-                                            </div>
-                                            <div class="modal fade" id="moviefinder" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered ">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header bg-dark">
-                                                            <h5 class="modal-title text-primary"
-                                                                id="staticBackdropLabel">MovieFlex APP Using React &
-                                                                Redux-saga
-                                                            </h5>
-                                                            <button type="button" class="btn-close btn-primary"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body text-center bg-danger">
-                                                            <img src="Images/movieflex.gif" class="img-fluid card-img"
-                                                                alt="" srcset="">
-                                                        </div>
-                                                        <hr />
-                                                        <div class="modal-body bg-dark text-white">
-                                                            It provides all the variety of movies we want. A
-                                                            site written in React with Redux Redux-saga also handle the
-                                                            api of themoviedb .
-                                                            Here,we can add the favourite movies as well as remove it
-                                                            from favourite list .
-                                                        </div>
-                                                        <div class="modal-footer d-flex justify-content-between">
-                                                            <a href="https://frosty-kowalevski-42e494.netlify.app"
-                                                                target="_blank" class="btn btn-secondary">View site</a>
-                                                            <a href="https://github.com/jiten2032/MovieFlex/tree/main/movieflex-app"
-                                                                target="_blank" class="btn btn-primary">View source
-                                                                code</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/reduxsaga.jpg" class="img-fluid card-img"
-                                            alt="Handling API-Redux-saga">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/reduxbooklibrary.jpg " class="img-fluid card-img"
-                                            alt="BookLibrary">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/shoping cart.jpg" class="img-fluid card-img"
-                                            alt="flipkartclone">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/crudreactredux.jpg" class="img-fluid card-img"
-                                            alt="todolistredux">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img"
-                                            alt="githubfinderusingreact">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/React-restaurant.jpg" class="img-fluid card-img"
-                                            alt="React-restaurant">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png"
-                                            alt="react-todo-application" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/githubuserfinderjavascript.jpg" class="img-fluid card-img"
-                                            alt="githubfinderjavascript">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/postman clone.jpg" alt="Car" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/maxresdefault.jpg" class="img-fluid card-img"
-                                            alt="booklibraryjavascript">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
-                                            alt="tic-tac-toe game">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/images (1).jfif" class="img-fluid card-img" alt="calculator">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/foodhouseimage.jfif" class="img-fluid card-img"
-                                            alt="food house">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="portfolio_row ">
-                        <div class="container">
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/movie finder.jfif" class="img-fluid card-img"
-                                            alt="movieflex App">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/reduxsaga.jpg" class="img-fluid card-img"
-                                            alt="Handling API-Redux-saga">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/reduxbooklibrary.jpg " class="img-fluid card-img"
-                                            alt="BookLibrary">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/shoping cart.jpg" class="img-fluid card-img"
-                                            alt="flipkartclone">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/crudreactredux.jpg" class="img-fluid card-img"
-                                            alt="todolistredux">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div class="portfolio_row ">
-                        <div class="container">
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img"
-                                            alt="githubfinderusingreact">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/React-restaurant.jpg" class="img-fluid card-img" alt="Car">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png"
-                                            alt="react-todo-application" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-Javascript" role="tabpanel" aria-labelledby="pills-Javascript-tab">
-                    <div class="portfolio_row ">
-                        <div class="container">
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/githubuserfinderjavascript.jpg" class="img-fluid card-img"
-                                            alt="githubfinderjavascript">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/postman clone.jpg" alt="Car" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/maxresdefault.jpg" class="img-fluid card-img"
-                                            alt="booklibraryjavascript">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
-                                            alt="tic-tac-toe game">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/images (1).jfif" class="img-fluid card-img" alt="calculator">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-Bootstrap" role="tabpanel" aria-labelledby="pills-Bootstrap-tab">
-                    <div class="portfolio_row ">
-                        <div class="container">
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="content">
-                                        <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-Sass" role="tabpanel" aria-labelledby="pills-Sass-tab">
-                    <div class="portfolio_row ">
-                        <div class="container">
-
-                            <div class="row text-center g-1 m-0">
-                                <div class="col-sm-4">
-                                    <div class="content">
-                                        <img src="Images/foodhouseimage.jfif" class="img-fluid card-img"
-                                            alt="food house">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <!-- <div class="main"> -->
-
-
-        <!-- 
-            <div id="myBtnContainer" class="d-flex justify-content-evenly my-5 ">
-                <button class="portfolio_btn btn_active btn" onclick="filterSelection('all')"> Show all</button>
-                <button class="portfolio_btn btn" onclick="filterSelection('redux')"> REDUX</button>
-                <button class="portfolio_btn btn" onclick="filterSelection('react')"> REACT-JS</button>
-                <button class="portfolio_btn btn" onclick="filterSelection('javascript')"> JAVASCRIPT</button>
-                <button class="portfolio_btn btn" onclick="filterSelection('bootstarp')"> BOOTSTRAP</button>
-                <button class="portfolio_btn btn" onclick="filterSelection('sass')"> SAAS</button>
-            </div> -->
-
-        <!-- Portfolio Gallery Grid -->
-        <!-- <div class="portfolio_row ">
-            <div class="container"> -->
-        <!-- <div class="row">
-                            <div class="col-sm-3">
-                                <div class="column redux">
                                     <div class="content">
                                         <img src="Images/movie finder.jfif" class="img-fluid card-img"
                                             alt="movieflex App">
@@ -799,14 +333,17 @@
                                                         <hr />
                                                         <div class="modal-body bg-dark text-white">
                                                             It provides all the variety of movies we want. A
-                                                            site written in React with Redux Redux-saga also handle the
+                                                            site written in React with Redux Redux-saga also handle
+                                                            the
                                                             api of themoviedb .
-                                                            Here,we can add the favourite movies as well as remove it
+                                                            Here,we can add the favourite movies as well as remove
+                                                            it
                                                             from favourite list .
                                                         </div>
                                                         <div class="modal-footer d-flex justify-content-between">
                                                             <a href="https://frosty-kowalevski-42e494.netlify.app"
-                                                                target="_blank" class="btn btn-secondary">View site</a>
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
                                                             <a href="https://github.com/jiten2032/MovieFlex/tree/main/movieflex-app"
                                                                 target="_blank" class="btn btn-primary">View source
                                                                 code</a>
@@ -815,129 +352,145 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="column redux">
+                                <div class="col-sm-3">
                                     <div class="content">
                                         <img src="Images/reduxsaga.jpg" class="img-fluid card-img"
                                             alt="Handling API-Redux-saga">
                                         <div class="content_overlay">
                                             <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#apihandle">Learn
                                                     More</button>
                                             </div>
+                                            <div class="modal fade" id="apihandle" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A Project of Handle API
+                                                                calls
+                                                                Using React Redux saga.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1_QERgzuzphdQz4e0fNs1CFQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a project of handling varius API calls like
+                                                            GET,POST,DELET using varius saga effects like
+                                                            take,takeEvery,takeLatest,put,call,fork .
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://peaceful-curran-b39134.netlify.app"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/API-Call-using-SAGA"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="column redux">
+                                <div class="col-sm-3">
                                     <div class="content">
-                                        <img src="Images/reduxbooklibrary.jpg" class="img-fluid card-img"
+                                        <img src="Images/reduxbooklibrary.jpg " class="img-fluid card-img"
                                             alt="BookLibrary">
                                         <div class="content_overlay">
                                             <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#BookLibrary">Learn
                                                     More</button>
+                                            </div>
+                                            <div class="modal fade" id="BookLibrary" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Book Library
+                                                                Using React-Redux.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1_y9A_hHAtzWPdXeDK7h2LFQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides to store all the variety of books you love
+                                                            and
+                                                            as well you can remove it also. A
+                                                            site written in React with Redux.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://react-redux-book-library.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Redux-Book_Library/tree/main/redux-book-library"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-
-                            <div class="col-sm-3">
-                                <div class="column redux">
+                                <div class="col-sm-3">
                                     <div class="content">
                                         <img src="Images/shoping cart.jpg" class="img-fluid card-img"
                                             alt="flipkartclone">
                                         <div class="content_overlay">
                                             <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-        <!-- <div class="row">
-                            <div class="col-sm-3">
-                                <div class="column redux">
-                                    <div class="content">
-                                        <img src="Images/addpostredux.png" alt="todolistredux"
-                                            class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 mt-4">
-                                <div class="column react">
-                                    <div class="content">
-                                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img"
-                                            alt="githubfinderusingreact">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 mt-4">
-                                <div class="column react">
-                                    <div class="content">
-                                        <img src="Images/React-restaurant.jpg" alt="Car" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 mt-4">
-                                <div class="column react">
-                                    <div class="content">
-                                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png" alt="Car"
-                                            class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
                                                 <button type="button" class="btn btn-outline-danger text-white"
-                                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Learn
-                                                    More</button> -->
-
-        <!-- Modal -->
-        <!-- </div>
-                                            <div class="modal fade" id="staticBackdrop" tabindex="-1"
+                                                    data-bs-toggle="modal" data-bs-target="#shopingcart">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="shopingcart" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-dialog modal-dialog-centered ">
                                                     <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="staticBackdropLabel">Modal
-                                                                title</h5>
-                                                            <button type="button" class="btn-close"
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A project using varius
+                                                                functionality of a e-commerce site
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
                                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
-                                                        <div class="modal-body">
-                                                            hjjdhdgdffdf
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1__K8fX6RIe3lyWpOxJFlZTQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <button type="button"
-                                                                class="btn btn-primary">Understood</button>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to use the functionality like
+                                                            addtocart,shoppinglist,login & logout, like an
+                                                            e-commerce
+                                                            page .
+                                                            Routing like dynamic routing are use here.A
+                                                            site written in React with Redux.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="ecomerceshoping.netlify.app" target="_blank"
+                                                                class="btn btn-secondary">View site</a>
+                                                            <a href="https://github.com/jiten2032/Flipkart-React-Redux/tree/main/flipkart-react-redux"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -946,55 +499,781 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-
-        <!-- <div class="row">
-                            <div class="col-sm-3">
-                                <div class="column javascript">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
                                     <div class="content">
-                                        <img src="Images/githubfinderjavascript.png" class="img-fluid card-img"
+                                        <img src="Images/react context and hooks.jpeg" class="img-fluid card-img"
+                                            alt="todolistredux">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#todolistredux">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="todolistredux" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A CRUD app using React
+                                                                context
+                                                                api
+                                                                and varius hooks.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/ezgif.com-gif-maker.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to add and delete your favourite books.
+                                                            using of local storage the books are no longer remove
+                                                            after
+                                                            refreshing the page.A
+                                                            site written in React with Context api and varius hooks
+                                                            .
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://loving-heyrovsky-49be0d.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/BookStore/tree/main/booklist"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img"
+                                            alt="githubfinderusingreact">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#githubfinderusingreact">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="githubfinderusingreact" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Github user Finder App
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/reactgithubuserfindergif.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to find the users worldwide from github.
+                                                            A site written with React.
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://reactgithubuserfinder.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Github-Finder-React/tree/main/github-finder"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/React-restaurant.jpg" class="img-fluid card-img"
+                                            alt="React-restaurant">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="githubfinderusingreact" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-dark">
+                                                        <h5 class="modal-title text-primary"
+                                                            id="staticBackdropLabel">Github user Finder App
+                                                        </h5>
+                                                        <button type="button" class="btn-close btn-primary"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body text-center bg-danger">
+                                                        <img src="Images/reactgithubuserfindergif.gif"
+                                                            class="img-fluid card-img" alt="" srcset="">
+                                                    </div>
+                                                    <hr />
+                                                    <div class="modal-body bg-dark text-white">
+                                                        It provides you to find the users worldwide from github.
+                                                        .A
+                                                        site written with React.
+
+                                                    </div>
+                                                    <div class="modal-footer d-flex justify-content-between">
+                                                        <a href="https://reactgithubuserfinder.netlify.app/"
+                                                            target="_blank" class="btn btn-secondary">View site</a>
+                                                        <a href="https://github.com/jiten2032/Github-Finder-React/tree/main/github-finder"
+                                                            target="_blank" class="btn btn-primary">View source
+                                                            code</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png"
+                                            alt="react-todo-application" class="img-fluid card-img">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#todolistreact">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="todolistreact" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">TODO App .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/reacttodolist.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to add and delete your todos.
+                                                            A site written with React.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://reactodoapplication.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Todos-Application/tree/main/todos-app"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/postman clone.jpg" alt="postmanclone"
+                                            class="img-fluid card-img">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#postmanclone">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="postmanclone" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">POSTMAN clone
+                                                                app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/postmangif.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you make test your various api call like
+                                                            GET,POST,PATCH,PUT & DELET.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular
+                                                            and more user readable. A site written with HTML and
+                                                            javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://clonepostman.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Patang"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/githubuserfinderjavascript.jpg" class="img-fluid card-img"
                                             alt="githubfinderjavascript">
                                         <div class="content_overlay">
                                             <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#githubfinderjavascript">Learn
                                                     More</button>
+                                            </div>
+                                            <div class="modal fade" id="githubfinderjavascript" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Github user finder app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/javascriptgithubuserfinder.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to find the users worldwide from github.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular and more user readable and for handle api using
+                                                            the
+                                                            githubs api.
+                                                            A site written with HTML and javascript .
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://githubuserfinderjavascript.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/GitHub-_Finder"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="column javascript">
-                                    <div class="content">
-                                        <img src="Images/postman clone.jpg" alt="Car" class="img-fluid card-img">
-                                        <div class="content_overlay">
-                                            <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
-                                                    More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="column javascript">
+
+                                <div class="col-sm-3">
                                     <div class="content">
                                         <img src="Images/maxresdefault.jpg" class="img-fluid card-img"
                                             alt="booklibraryjavascript">
                                         <div class="content_overlay">
                                             <div class="content_text">
-                                                <button type="button" class="btn btn-outline-danger text-white">Learn
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#booklibraryjavascript">Learn
                                                     More</button>
+                                            </div>
+                                            <div class="modal fade" id="booklibraryjavascript" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Book Library app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/javascriptbooklibrary.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to store your favourite books along with
+                                                            books author and booktype and you can remove it also.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular and more user readable.
+                                                            A site written with HTML and javascript .
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://booklibraryapp.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Book-Library"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
+                                            alt="tic-tac-toe game">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#tictactoegame">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="tictactoegame" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Tic Tac Toe Game App.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/tictactoegame.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to play the tic tac toe game.You can
+                                                            play
+                                                            with your smaller screen also.
+                                                            A site written with HTML and javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://tic-tac-toe-gam-app.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Tic-Tac-Toe-Game"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#flipkart">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="flipkart" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">flipkart clone .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/cloneflipkart.png"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a clone of flipkart e-commerce app .
+                                                            A site written with HTML,CSS and Bootstrap.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://cloneflipkart.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Flipkart"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="column javascript">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
                                     <div class="content">
-                                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
-                                            alt="tic-tac-toe game" height="100px">
+                                        <img src="Images/images (1).jfif" class="img-fluid card-img" alt="calculator">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#calculator">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="calculator" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Calculator .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/calculator.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a simple calculator
+                                                            written with HTML and javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://basic-simple-calculator.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/calculator"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#zerodha">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="zerodha" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Zerodha Clone.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/zerodhagif.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a clone of Zerodha website .
+                                                            written with HTML,CSS and Bootstarp.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://zerodhaclone.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Zerodha"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/foodhouseimage.jfif" class="img-fluid card-img"
+                                            alt="food house">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#foodhouse">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="foodhouse" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Food House .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/foodhousegif.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a project for a restaurant.
+                                                            A site written with HTML and SASS.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://foodhousesaas.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/SASS_Food_House"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="portfolio_row ">
+                        <div class="container">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/movie finder.jfif" class="img-fluid card-img"
+                                            alt="movieflex App">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#moviefinder1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="moviefinder1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">MovieFlex APP Using React &
+                                                                Redux-saga
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/movieflex.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides all the variety of movies we want. A
+                                                            site written in React with Redux Redux-saga also handle
+                                                            the
+                                                            api of themoviedb .
+                                                            Here,we can add the favourite movies as well as remove
+                                                            it
+                                                            from favourite list .
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://frosty-kowalevski-42e494.netlify.app"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/MovieFlex/tree/main/movieflex-app"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/reduxsaga.jpg" class="img-fluid card-img"
+                                            alt="Handling API-Redux-saga">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#apihandle1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="apihandle1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A Project of Handle API
+                                                                calls
+                                                                Using React Redux saga.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1_QERgzuzphdQz4e0fNs1CFQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a project of handling varius API calls like
+                                                            GET,POST,DELET using varius saga effects like
+                                                            take,takeEvery,takeLatest,put,call,fork .
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://peaceful-curran-b39134.netlify.app"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/API-Call-using-SAGA"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/reduxbooklibrary.jpg " class="img-fluid card-img"
+                                            alt="BookLibrary">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#BookLibrary1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="BookLibrary1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Book Library
+                                                                Using React-Redux.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1_y9A_hHAtzWPdXeDK7h2LFQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides to store all the variety of books you love
+                                                            and
+                                                            as well you can remove it also. A
+                                                            site written in React with Redux.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://react-redux-book-library.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Redux-Book_Library/tree/main/redux-book-library"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/shoping cart.jpg" class="img-fluid card-img"
+                                            alt="flipkartclone">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#shopingcart1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="shopingcart1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A project using varius
+                                                                functionality of a e-commerce site
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/1__K8fX6RIe3lyWpOxJFlZTQ.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to use the functionality like
+                                                            addtocart,shoppinglist,login & logout, like an
+                                                            e-commerce
+                                                            page .
+                                                            Routing like dynamic routing are use here.A
+                                                            site written in React with Redux.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="ecomerceshoping.netlify.app" target="_blank"
+                                                                class="btn btn-secondary">View site</a>
+                                                            <a href="https://github.com/jiten2032/Flipkart-React-Redux/tree/main/flipkart-react-redux"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/crudreactredux.jpg" class="img-fluid card-img"
+                                            alt="todolistredux">
                                         <div class="content_overlay">
                                             <div class="content_text">
                                                 <button type="button" class="btn btn-outline-danger text-white">Learn
@@ -1002,176 +1281,614 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="column javascript">
-                                        <div class="content">
-                                            <img src="Images/images (1).jfif" class="img-fluid card-img"
-                                                alt="calculator">
-                                            <div class="content_overlay">
-                                                <div class="content_text">
-                                                    <button type="button"
-                                                        class="btn btn-outline-danger text-white">Learn
-                                                        More</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="column bootstarp">
-                                        <div class="content">
-                                            <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
-                                            <div class="content_overlay">
-                                                <div class="content_text">
-                                                    <button type="button"
-                                                        class="btn btn-outline-danger text-white">Learn
-                                                        More</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="column bootstarp">
-                                        <div class="content">
-                                            <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
-                                            <div class="content_overlay">
-                                                <div class="content_text">
-                                                    <button type="button"
-                                                        class="btn btn-outline-danger text-white">Learn
-                                                        More</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="column sass">
-                                        <div class="content">
-                                            <img src="Images/foodhouseimage.jfif" class="img-fluid card-img"
-                                                alt="food house">
-                                            <div class="content_overlay">
-                                                <div class="content_text">
-                                                    <button type="button"
-                                                        class="btn btn-outline-danger text-white">Learn
-                                                        More</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div> -->
-        <!-- END GRID -->
-        <!-- </div>
-                    </div> -->
-        <!-- END MAIN -->
+                        </div>
+                    </div>
 
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="portfolio_row ">
+                        <div class="container">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img"
+                                            alt="githubfinderusingreact">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#githubfinderusingreact1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="githubfinderusingreact1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Github user Finder App
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/reactgithubuserfindergif.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to find the users worldwide from github.
+                                                            A site written with React.
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://reactgithubuserfinder.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Github-Finder-React/tree/main/github-finder"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/react context and hooks.jpeg" class="img-fluid card-img"
+                                            alt="todolistredux">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#todolistredux1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="todolistredux1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">A CRUD app using React
+                                                                context
+                                                                api
+                                                                and varius hooks.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/ezgif.com-gif-maker.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to add and delete your favourite books.
+                                                            using of local storage the books are no longer remove
+                                                            after
+                                                            refreshing the page.A
+                                                            site written in React with Context api and varius hooks
+                                                            .
 
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://loving-heyrovsky-49be0d.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/BookStore/tree/main/booklist"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png"
+                                            alt="react-todo-application" class="img-fluid card-img">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#todolistreact1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="todolistreact1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">TODO App .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/reacttodolist.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to add and delete your todos.
+                                                            A site written with React.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="row text-center g-1 m-0">
-                    <div class="col-sm-3">
-                        <div class="content">
-                            <img src="Images/movie finder.jfif" class="img-fluid card-img" alt="movieflex App">
-                            <div class="content_overlay">
-                                <div class="content_text">
-                                    <button type="button" class="btn btn-outline-danger text-white">Learn
-                                        More</button>
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://reactodoapplication.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Todos-Application/tree/main/todos-app"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="Images/reduxsaga.jpg" class="img-fluid card-img" alt="Handling API-Redux-saga">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/reduxbooklibrary.jpg " class="img-fluid card-img" alt="BookLibrary">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/shoping cart.jpg" class="img-fluid card-img" alt="flipkartclone">
+                </div>
+                <div class="tab-pane fade" id="pills-Javascript" role="tabpanel" aria-labelledby="pills-Javascript-tab">
+                    <div class="portfolio_row ">
+                        <div class="container">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/githubuserfinderjavascript.jpg" class="img-fluid card-img"
+                                            alt="githubfinderjavascript">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#githubfinderjavascript1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="githubfinderjavascript1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Github user finder app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/javascriptgithubuserfinder.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to find the users worldwide from github.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular and more user readable and for handle api using
+                                                            the
+                                                            githubs api.
+                                                            A site written with HTML and javascript .
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://githubuserfinderjavascript.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/GitHub-_Finder"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/postman clone.jpg" alt="postmanclone"
+                                            class="img-fluid card-img">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#postmanclone1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="postmanclone1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">POSTMAN clone
+                                                                app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/postmangif.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you make test your various api call like
+                                                            GET,POST,PATCH,PUT & DELET.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular
+                                                            and more user readable. A site written with HTML and
+                                                            javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://clonepostman.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Patang"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/maxresdefault.jpg" class="img-fluid card-img"
+                                            alt="booklibraryjavascript">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#booklibraryjavascript1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="booklibraryjavascript1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Book Library app.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/javascriptbooklibrary.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to store your favourite books along with
+                                                            books author and booktype and you can remove it also.
+                                                            ES6 CLASSES and ASYNCH AWAIT are makes this code more
+                                                            modular and more user readable.
+                                                            A site written with HTML and javascript .
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://booklibraryapp.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Book-Library"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
+                                            alt="tic-tac-toe game">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#tictactoegame1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="tictactoegame1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Tic Tac Toe Game App.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/tictactoegame.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            It provides you to play the tic tac toe game.You can
+                                                            play
+                                                            with your smaller screen also.
+                                                            A site written with HTML and javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://tic-tac-toe-gam-app.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Tic-Tac-Toe-Game"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/images (1).jfif" class="img-fluid card-img" alt="calculator">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#calculator1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="calculator1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Calculator .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/calculator.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a simple calculator
+                                                            written with HTML and javascript.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://basic-simple-calculator.netlify.app/"
+                                                                target="_blank" class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/calculator"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row text-center g-1 m-0">
-                    <div class="col-sm-3">
-                        <img src="Images/crudreactredux.jpg" class="img-fluid card-img" alt="todolistredux">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/githubfinderreact.jpg" class="img-fluid card-img" alt="githubfinderusingreact">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/React-restaurant.jpg" class="img-fluid card-img" alt="Car">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/6ac51dff-2348-4771-bca2-7f7e4de90494.png" alt="Car" class="img-fluid card-img">
+                <div class="tab-pane fade" id="pills-Bootstrap" role="tabpanel" aria-labelledby="pills-Bootstrap-tab">
+                    <div class="portfolio_row ">
+                        <div class="container">
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#zerodha1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="zerodha1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Zerodha Clone.
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/zerodhagif.gif" class="img-fluid card-img"
+                                                                alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a clone of Zerodha website .
+                                                            written with HTML,CSS and Bootstarp.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://zerodhaclone.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Zerodha"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="content">
+                                        <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#flipkart1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="flipkart1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">flipkart clone .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/cloneflipkart.png"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a clone of flipkart e-commerce app .
+                                                            A site written with HTML,CSS and Bootstrap.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://cloneflipkart.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/Flipkart"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row text-center g-1 m-0">
-                    <div class="col-sm-3">
-                        <img src="Images/githubuserfinderjavascript.jpg" class="img-fluid card-img"
-                            alt="githubfinderjavascript">
+                <div class="tab-pane fade" id="pills-Sass" role="tabpanel" aria-labelledby="pills-Sass-tab">
+                    <div class="portfolio_row ">
+                        <div class="container">
+
+                            <div class="row text-center g-1 m-0">
+                                <div class="col-sm-4">
+                                    <div class="content">
+                                        <img src="Images/foodhouseimage.jfif" class="img-fluid card-img"
+                                            alt="food house">
+                                        <div class="content_overlay">
+                                            <div class="content_text">
+                                                <button type="button" class="btn btn-outline-danger text-white"
+                                                    data-bs-toggle="modal" data-bs-target="#foodhouse1">Learn
+                                                    More</button>
+                                            </div>
+                                            <div class="modal fade" id="foodhouse1" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered ">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-dark">
+                                                            <h5 class="modal-title text-primary"
+                                                                id="staticBackdropLabel">Food House .
+                                                            </h5>
+                                                            <button type="button" class="btn-close btn-primary"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-center bg-danger">
+                                                            <img src="Images/foodhousegif.gif"
+                                                                class="img-fluid card-img" alt="" srcset="">
+                                                        </div>
+                                                        <hr />
+                                                        <div class="modal-body bg-dark text-white">
+                                                            Its a project for a restaurant.
+                                                            A site written with HTML and SASS.
+
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-between">
+                                                            <a href="https://foodhousesaas.netlify.app/" target="_blank"
+                                                                class="btn btn-secondary">View
+                                                                site</a>
+                                                            <a href="https://github.com/jiten2032/SASS_Food_House"
+                                                                target="_blank" class="btn btn-primary">View source
+                                                                code</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="Images/postman clone.jpg" alt="Car" class="img-fluid card-img">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/maxresdefault.jpg" class="img-fluid card-img" alt="booklibraryjavascript">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/1_gYYWXxLr7k4_RlIwkM1Bnw.png" class="img-fluid card-img"
-                            alt="tic-tac-toe game">
-                    </div>
+
                 </div>
-                <div class="row text-center g-1 m-0">
-                    <div class="col-sm-3">
-                        <img src="Images/images (1).jfif" class="img-fluid card-img" alt="calculator">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/zerodha.png" class="img-fluid card-img" alt="zerodha">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/flipkart.jfif" class="img-fluid card-img" alt="flipkart">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="Images/foodhouseimage.jfif" class="img-fluid card-img" alt="food house">
-                    </div>
-                </div>
-
-
-
-
             </div>
-            </div>
-               </div> -->
 
-        <!-- BLOG -->
-        <div id="blog">
-            <!-- Item 1 -->
-        </div>
-        <!-- CONTACT -->
-        <div id="contact">
-            <!-- Item 1 -->
-
+            <div class="my-5 invisible">jfhjkdhjfh</div>
+            <div class="my-5 invisible">jfhjkdhjfh</div>
         </div>
     </div>
+
+
+
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="contact_content">
+            <h1 class="my-5 text-white">CONTACT</h1>
+            <h5 class="my-3 text-info text-center">Have a question or want to work together?</h5>
+            <div class="contact_details container my-5">
+                <ul class="">
+                    <li><img src="https://img.icons8.com/fluent/40/000000/name.png" class="img-fluid" />
+                        <span class="ms-5"> Jiten Mohanty</span>
+                    </li>
+                    <li><img src="https://img.icons8.com/nolan/40/send-mass-email.png" class="img-fluid" />
+                        <span class="ms-5"> jiten2032@gmail.com</span>
+                    </li>
+                    <li><img src="https://img.icons8.com/doodle/40/000000/outgoing-call.png" class="img-fluid" />
+                        +91 <span class="ms-4"> 7978684550/9658030384 </span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="my-5 invisible">jfhjkdhjfh</div>
+            <div class="my-5 invisible">jfhjkdhjfh</div>
+            <div class="footer my-5 text-white position-relative">
+                <div class="Home_tab bg-danger position-absolute top-0 start-50 translate-middle"><a href="#home"><img
+                            src="https://img.icons8.com/fluent/48/000000/chevron.png" /></a> </div>
+
+                <ul class="justify-content-center d-flex my-5">
+                    <li><a href=""><img src="https://img.icons8.com/nolan/30/facebook.png" /></a></li>
+                    <li><a href=""><img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" /></a></li>
+                    <li><a href=""><img src="https://img.icons8.com/nolan/30/linkedin.png" /></a></li>
+
+                </ul>
+                <div class="text-center" id="copyright">JITEN MOHANTY <span class="text-danger">©2021</span> </div>
+                <!-- © Copyright 2021 Josh Miller -->
+            </div>
+
+        </div>
+
+    </div>
+    
 
 
     <script src="index.js"></script>
